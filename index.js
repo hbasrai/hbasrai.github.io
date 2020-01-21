@@ -1,7 +1,7 @@
 var testimonials = [
-	[ "testimonial one", "name one" ],
-	[ "testimonial two", "name two" ],
-	[ "testimonial three", "name three" ],
+	[ "A riveting and poignant memoir written in lyrical and moving prose. This story will touch your heart. ", "Kathleen Harrington, author of the <span class=\"title\">Highland Lairds Trilogy</span>" ],
+	[ "[H&ocirc;ng-M&#7929; Basrai] has a deft writer's hand and eye for detail.", "Ruth Nolan, author of <span class=\"title\">Ruby Mountain</span>" ],
+	[ "Reading the stories of refugees is always important, perhaps now more than ever.", "Victoria Waddle, managing editor of <span class=\"title\">Inlandia: A Literary Journey</span>" ],
 ];
 
 window.onload = function() {
@@ -31,8 +31,6 @@ window.onload = function() {
 	function onScroll(e) {
 		var rect = quote.getBoundingClientRect();
 
-		console.log(window.innerHeight, window.scrollY, window.innerHeight + window.scrollY, d.top);
-
 		if (window.innerHeight - rect.bottom > 100) {
 			load.classList.remove("hidden");
 		}
@@ -53,20 +51,38 @@ window.onload = function() {
 	window.addEventListener("scroll", onScroll);
 
 	var n = 0;
+
+	function loadTestimonial() {
+		tt.innerHTML = testimonials[n][0];
+		ta.innerHTML = testimonials[n++][1];
+
+		if (n == testimonials.length) {
+			n = 0;
+		}
+	}
+
 	function nextTestimonial() {
 		t.style.setProperty("opacity", 0);
 
 		window.setTimeout(function() {
-			tt.textContent = testimonials[n][0];
-			ta.textContent = testimonials[n++][1];
-			if (n == testimonials.length) {
-				n = 0;
-			}
+			loadTestimonial();
 
 			t.style.setProperty("opacity", 1);
 		}, 1000);
 	}
-	nextTestimonial();
-	setInterval(nextTestimonial, 10000);
+
+	var maxH = 0;
+
+	do {
+		var th = t.getBoundingClientRect();
+		if (maxH < th.height) {
+			maxH = th.height;
+		}
+		loadTestimonial();
+	} while (n != 0);
+
+	t.style.setProperty("height", maxH + "px");
+
+	setInterval(nextTestimonial, 7000);
 }
 

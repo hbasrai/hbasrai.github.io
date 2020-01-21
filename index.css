@@ -1,36 +1,11 @@
-@font-face {
-	font-family: "fico";
-	src: url("./fonts/fico.eot");
-	src: url("./fonts/fico.eot?#iefix") format("embedded-opentype"),
- 	     url("./fonts/fico.woff") format("woff"),
-	     url("./fonts/fico.ttf") format("truetype"),
-	     url("./fonts/fico.svg#fico") format("svg");
-}
-
-.icon {
-	display: inline-block;
-}
-
-.icon:before {
-	font-family: fico;
-	font-weight: normal !important;
-	font-style: normal !important;
-	text-transform: none !important;
-	vertical-align: baseline;
-	-webkit-font-smoothing: antialiased;
-}
-
-.icon-facebook:before { content: "\f13a"; }
-.icon-camera:before { content: "\f10d"; }
-.icon-mail:before { content: "\f125"; }
-
-html, body, h1, h2, h3, h4, p, a {
+html, body, h1, h2, h3, h4, p, a, ul {
 	margin: 0;
 	padding: 0;
 	font-family: 'Inria Serif', serif;
 	line-height: 1em;
 	text-decoration: none;
 	color: black;
+	list-style: none;
 }
 
 body {
@@ -96,7 +71,12 @@ a {
 	padding: 0.4em;
 }
 
-.purchase > a:hover {
+a:hover {
+	color: #bbbcbe;
+	border-color: #bbbcbe;
+}
+
+.more:hover {
 	color: #bbbcbe;
 	border-color: #bbbcbe;
 }
@@ -128,6 +108,7 @@ a {
 }
 
 .quote {
+	width: 100%;
 	color: gray;
 	font-size: 0.8em;
 	font-style: italic;
@@ -157,27 +138,42 @@ a {
 
 .testimonial {
 	transition: opacity 1s ease-in-out;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .testimonial > p {
 	font-weight: bold;
+	text-align: center;
 }
 
 .testimonial > p::before {
 	content: "\201C";
 	font-size: 1.5em;
-	margin-right: 0.3em;
 }
 
 .testimonial> p::after {
 	content: "\201D";
 	font-size: 1.5em;
-	margin-left: 0.3em;
+}
+
+.testimonial > h2 {
+	font-weight: normal;
+}
+
+.who {
+	font-style: italic;
 }
 
 .author {
 	width: 225px;
-	transition: opacity 1s;
+	transition: opacity 1.5s;
+}
+
+.more {
+	padding-bottom: 5px;
+	border-bottom: 2px solid black;
 }
 
 #a2 {
@@ -185,8 +181,15 @@ a {
 	margin-top: -337.5px;
 }
 
-.extra {
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
+.title {
+	font-style: italic;
+}
+
+.events li > p:first-child {
+	font-weight: bold;
+}
+
+.nietos {
+	font-size: 0.6em;
+	color: hotpink;
 }

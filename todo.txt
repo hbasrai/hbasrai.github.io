@@ -1,7 +1,11 @@
-title text narrower on mobile
+title text narrower on mobile?
 flat book cover?
 publisher info
-scroll transition
+
 description
 	author + title
+events
+
 stylize author name
+delete social media icons
+title
