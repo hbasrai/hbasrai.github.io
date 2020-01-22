@@ -58,7 +58,7 @@ h4 {
 }
 
 p {
-	font-size: 0.9em;
+	font-size: 1em;
 }
 
 a {
@@ -110,7 +110,7 @@ a:hover {
 .quote {
 	width: 100%;
 	color: gray;
-	font-size: 0.8em;
+	font-size: 0.9em;
 	font-style: italic;
 }
 
@@ -185,6 +185,10 @@ a:hover {
 	font-style: italic;
 }
 
+.events li:not(:last-child) {
+	margin-bottom: 1em;
+}
+
 .events li > p:first-child {
 	font-weight: bold;
 }
@@ -192,4 +196,9 @@ a:hover {
 .nietos {
 	font-size: 0.6em;
 	color: hotpink;
+}
+
+.strike p {
+	text-decoration: line-through;
+	color: gray;
 }

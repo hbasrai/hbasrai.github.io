@@ -1,6 +1,6 @@
 var testimonials = [
 	[ "A riveting and poignant memoir written in lyrical and moving prose. This story will touch your heart. ", "Kathleen Harrington, author of the <span class=\"title\">Highland Lairds Trilogy</span>" ],
-	[ "[H&ocirc;ng-M&#7929; Basrai] has a deft writer's hand and eye for detail.", "Ruth Nolan, author of <span class=\"title\">Ruby Mountain</span>" ],
+	[ "[H&#7891;ng-M&#7929; Basrai] has a deft writer's hand and eye for detail.", "Ruth Nolan, author of <span class=\"title\">Ruby Mountain</span>" ],
 	[ "Reading the stories of refugees is always important, perhaps now more than ever.", "Victoria Waddle, managing editor of <span class=\"title\">Inlandia: A Literary Journey</span>" ],
 ];
 
