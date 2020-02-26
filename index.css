@@ -185,10 +185,6 @@ a:hover {
 	font-style: italic;
 }
 
-.events {
-	width: 380px;
-}
-
 .events li:not(:last-child) {
 	margin-bottom: 1em;
 }
