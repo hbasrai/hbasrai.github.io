@@ -193,6 +193,10 @@ a:hover {
 	font-weight: bold;
 }
 
+.events li > p:last-child {
+	font-style: italic;
+}
+
 .nietos {
 	font-size: 0.6em;
 	color: hotpink;
