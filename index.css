@@ -65,7 +65,23 @@ a {
 	display: inline-block;
 }
 
+.purchase {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 .purchase > a {
+	font-size: 0.9em;
+	border: 2px solid black;
+	padding: 0.4em;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	width: 44%;
+	text-align: center;
+}
+
+.social > a {
 	font-size: 0.9em;
 	border: 2px solid black;
 	padding: 0.4em;
@@ -200,6 +216,8 @@ a:hover {
 .nietos {
 	font-size: 0.6em;
 	color: hotpink;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
 }
 
 .strike p {

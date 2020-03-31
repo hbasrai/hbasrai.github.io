@@ -81,6 +81,8 @@ window.onload = function() {
 		loadTestimonial();
 	} while (n != 0);
 
+	maxH += 5;
+
 	t.style.setProperty("height", maxH + "px");
 
 	setInterval(nextTestimonial, 7000);
