@@ -81,7 +81,7 @@ window.onload = function() {
 		loadTestimonial();
 	} while (n != 0);
 
-	maxH += 5;
+	maxH += 20;
 
 	t.style.setProperty("height", maxH + "px");
 
