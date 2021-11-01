@@ -34,18 +34,6 @@ window.onload = function() {
 		if (window.innerHeight - rect.bottom > 100) {
 			load.classList.remove("hidden");
 		}
-
-		if (showA1 && window.innerHeight + window.scrollY - d.top > 50) {
-			showA1 = false;
-			a1.style.setProperty("opacity", 0);
-			a2.style.setProperty("opacity", 1);
-		}
-
-		if (!showA1 && window.innerHeight + window.scrollY - d.top < 50) {
-			showA1 = true;
-			a1.style.setProperty("opacity", 1);
-			a2.style.setProperty("opacity", 0);
-		}
 	}
 
 	window.addEventListener("scroll", onScroll);
